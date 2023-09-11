@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Producto } from './producto';
 
 @Component({
   selector: 'app-producto',
@@ -6,6 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./producto.component.sass']
 })
 export class ProductoComponent {
-  producto = 'Teclado';
+
+
+  selectedProducto: Producto = {
+    id: 1,
+    nombre: 'Teclado',
+    descripcion: 'rgb led',
+    image: 'url',
+  };
 
 }
